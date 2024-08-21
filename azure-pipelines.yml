@@ -1,4 +1,11 @@
 # Starter pipeline
+- task: AzureFunctionApp@2
+  inputs:
+    connectedServiceNameARM: 'Azure subscription 1(0f69a381-da78-497a-a2fc-395ee9460c3d)'
+    appType: 'functionApp'
+    isFlexConsumption: true
+    appName: 'TestFunctionApp9949'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
